@@ -1,4 +1,4 @@
-#### Environment yang diperlukan :
+### Environment yang diperlukan :
 * NodeJs via nvm (untuk macOS/linux bisa di cek di https://github.com/nvm-sh/nvm sedangkan untuk window bisa di cek di https://github.com/coreybutler/nvm-windows )
 * Appium (install via terminal/cmd setelah download node atau install Appium Desktop version )
 * Intellij IDEA dengan plugin Cucumber for Java, Gherkin dan TestNG
