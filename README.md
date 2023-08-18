@@ -54,7 +54,7 @@ export PATH="${ANDROID_HOME}/tools/bin:${PATH}"
 * Buka project dengan Intellij IDE
 * Copy seluruh isi file BaseTest.java.example kemudian paste ke dalam file BaseTest.java
 * Ubah value chromedriverExecutable ke folder tempat ekstrak chromedriver sampai nama file tanpa .exe
-* Jika ingin mengetes aplikasi Traveloka maka di file `src/test/resources/configuration.properties` di bagian `android.appPackage=com.innovecto.etalastic` diganti dengan `android.appPackage=com.innovecto.etalastic.staging`
+* Jika ingin mengetes aplikasi Traveloka maka di file `src/test/resources/configuration.properties` di bagian `android.appPackage=com.traveloka.android` dan `android.appActivity=com.traveloka.android.appentry.splash.SplashActivity`
 * Di file testng.xml ubah deviceName sesuai dengan device id dari langkah sebelumnya dan platformVersion sesuai dengan versi android di device
 * Pastikan sudah menginstall aplikasi Traveloka (baik dev ataupun prod) version di device
 * Di file testng.xml klik kanan kemudian pilih Run
