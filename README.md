@@ -58,4 +58,4 @@ export PATH="${ANDROID_HOME}/tools/bin:${PATH}"
 * Di file testng.xml ubah deviceName sesuai dengan device id dari langkah sebelumnya dan platformVersion sesuai dengan versi android di device
 * Pastikan sudah menginstall aplikasi Traveloka (baik dev ataupun prod) version di device
 * Di file testng.xml klik kanan kemudian pilih Run
-* Atau, di terminal/CMD ketik command `mvn clean install test -DsuiteXmlFile=<file_xml> -Dmaven.test.failure.ignore=true`
+* Atau, di terminal/CMD ketik command `mvn clean install test -DsuiteXmlFile=<file_xml>`
