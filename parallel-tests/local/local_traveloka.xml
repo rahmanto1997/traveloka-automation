@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Test Suite Sprint Local - Pro - Admin">
+<suite name="Test Suite Local - Traveloka">
 
-    <test name="sprint-local-pro-admin">
+    <test name="localTraveloka">
         <parameter name="udid" value="RRCT903C18Y" />
         <parameter name="platformVersion" value="13" />
         <classes>

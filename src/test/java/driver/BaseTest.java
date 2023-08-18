@@ -33,24 +33,24 @@ public class BaseTest {
         capabilities.setCapability("clearSystemFile", clearSystem);
         capabilities.setCapability("autoGrantPermissions", permissions);
         capabilities.setCapability("automationName", uiautomator);
-//        capabilities.setCapability("chromedriverExecutable", "/usr/local/bin/chromedriver"); //based on your local chromedriver
+        capabilities.setCapability("chromedriverExecutable", "/usr/local/bin/chromedriver"); //based on your local chromedriver
         capabilities.setCapability("setWebContentsDebuggingEnabled", true);
         capabilities.setCapability("autoWebview", false);
         capabilities.setCapability("appium:chromeOptions", ImmutableMap.of("w3c", false));
 
 //  ***************** choose which one will be use for start service *****************
 //      default appium service start using default port and config
-        service = AppiumDriverLocalService.buildDefaultService();
-        service.start();
+//        service = AppiumDriverLocalService.buildDefaultService();
+//        service.start();
 
 //      appium service start using certain port and config
-//        int port = 4723;
-//        service = AppiumDriverLocalService.buildService(new AppiumServiceBuilder()
-//                .usingDriverExecutable(new File(("/Users/qasir/.nvm/versions/node/v18.16.0/bin/node")))
-//                .withAppiumJS(new File(("/Users/qasir/.nvm/versions/node/v18.16.0/lib/node_modules/appium/build/lib/main.js")))
-//                .withIPAddress("127.0.0.1")
-//                .usingPort(port));
-//        service.start();
+        int port = 4723;
+        service = AppiumDriverLocalService.buildService(new AppiumServiceBuilder()
+                .usingDriverExecutable(new File(("/Users/qasir/.nvm/versions/node/v14.18.0/bin/node")))
+                .withAppiumJS(new File(("/Users/qasir/.nvm/versions/node/v14.18.0/lib/node_modules/appium/build/lib/main.js")))
+                .withIPAddress("127.0.0.1")
+                .usingPort(port));
+        service.start();
 //  ************************** end of start service choices ************************
 
         String service_url = service.getUrl().toString();

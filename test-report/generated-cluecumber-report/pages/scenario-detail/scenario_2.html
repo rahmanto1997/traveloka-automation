@@ -77,23 +77,20 @@ font-src * data: blob: 'unsafe-inline';"/>
             var chart = new Chart(ctx, {
   "data": {
     "labels": [
+      "Hooks.setup()",
       "user on screen home",
       "user click flight menu",
-      "user choose from \"Soekarno Hatta\"",
-      "user choose to \"Minangkabau Intl\"",
-      "user click button search"
+      "Hooks.stop(Scenario)"
     ],
     "datasets": [
       {
         "data": [
           0,
-          0,
-          0,
-          0,
+          1,
+          4,
           0
         ],
         "backgroundColor": [
-          "rgba(40, 167, 69, 1.000)",
           "rgba(40, 167, 69, 1.000)",
           "rgba(40, 167, 69, 1.000)",
           "rgba(40, 167, 69, 1.000)",
@@ -107,11 +104,9 @@ font-src * data: blob: 'unsafe-inline';"/>
           0,
           0,
           0,
-          0,
           0
         ],
         "backgroundColor": [
-          "rgba(220, 53, 69, 1.000)",
           "rgba(220, 53, 69, 1.000)",
           "rgba(220, 53, 69, 1.000)",
           "rgba(220, 53, 69, 1.000)",
@@ -125,11 +120,9 @@ font-src * data: blob: 'unsafe-inline';"/>
           0,
           0,
           0,
-          0,
           0
         ],
         "backgroundColor": [
-          "rgba(255, 193, 7, 1.000)",
           "rgba(255, 193, 7, 1.000)",
           "rgba(255, 193, 7, 1.000)",
           "rgba(255, 193, 7, 1.000)",
@@ -161,7 +154,7 @@ font-src * data: blob: 'unsafe-inline';"/>
         {
           "ticks": {
             "min": 0,
-            "stepSize": 0,
+            "stepSize": 4,
             "display": true
           },
           "stacked": true,
@@ -264,7 +257,7 @@ font-src * data: blob: 'unsafe-inline';"/>
                                 <a class="nav-link " href="pages/feature-summary.html">All Features</a>
                     </li>
             </ul>
-            <span class="text-light">2023-08-17 21:34:09</span>
+            <span class="text-light">2023-08-18 15:27:32</span>
         </div>
     </nav>
     <main role="main" class="container">
@@ -272,7 +265,7 @@ font-src * data: blob: 'unsafe-inline';"/>
             <div class="pb-2 mt-4 mb-2 border-bottom">
                     <h5>
                             <a href="pages/feature-scenarios/feature_0.html">00_Localization</a>
-                        <span class="small">features/00_Localization.feature</span>
+                        <span class="small">00_Localization.feature</span>
                     </h5>
                     <h3>User choose menu flight</h3>
             </div>
@@ -292,7 +285,7 @@ font-src * data: blob: 'unsafe-inline';"/>
         <div class="card h-100">
                 <div class="card-header">Scenario Info</div>
             <div class="card-body">
-            <li class="list-group-item">Test Runtime:<br>0m 00s 000ms</li>
+            <li class="list-group-item">Test Runtime:<br>0m 05s 589ms</li>
             <li class="list-group-item">
                     <a href="pages/tag-scenarios/tag_localTraveloka.html">@localTraveloka</a>            </li>
             </div>
@@ -304,29 +297,55 @@ font-src * data: blob: 'unsafe-inline';"/>
             <div class="card-body">
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">
-                    5         Steps
+                    2         Steps
 
                 </li>
                 <li class="list-group-item">
-                    0 passed     <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
+                    2 passed     <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
        title="passed"><span style="display:none">passed</span></i>
 
                     <br>
-                    1 failed     <i class="color-failed cluecumber-icon icon-failed" data-toggle="tooltip"
+                    0 failed     <i class="color-failed cluecumber-icon icon-failed" data-toggle="tooltip"
        title="failed"><span style="display:none">failed</span></i>
 
                     <br>
-                    4 skipped     <i class="color-skipped cluecumber-icon icon-skipped" data-toggle="tooltip"
+                    0 skipped     <i class="color-skipped cluecumber-icon icon-skipped" data-toggle="tooltip"
        title="skipped"><span style="display:none">skipped</span></i>
 
                 </li>
             </ul>
+                <button class="btn btn-outline-secondary btn-block collapsed" type="button" data-toggle="collapse"
+                        aria-expanded="true" data-cluecumber-item="before-after-hooks-button"
+                        data-target=".scenarioHook">Scenario Hooks
+                </button>
             </div>
         </div>
     </div>
     </div>
 
     <ul class="list-group list-group-flush">
+    <div class="col-sm-12 scenarioHook collapse h-auto" data-cluecumber-item="card">
+        <div class="card h-100">
+                <div class="card-header">Before Hooks</div>
+            <div class="card-body">
+                <li class="list-group-item">
+                        <div class="row row_passed table-row-passed">
+                            <div class="col-1 text-left small">1.</div>
+                            <div class="col-8 text-left">
+                                <i>Hooks.setup()</i>
+                            </div>
+                            <div class="col-2 text-left small">
+                                0m 00s 000ms
+                            </div>
+                            <div class="col-1 text-right">
+    <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
+       title="passed"><span style="display:none">passed</span></i>
+                            </div>
+                        </div>
+                </li>
+            </div>
+        </div>
+    </div>
 
     <div class="col-sm-12  h-auto" data-cluecumber-item="card">
         <div class="card h-100">
@@ -335,7 +354,7 @@ font-src * data: blob: 'unsafe-inline';"/>
                 <li class="list-group-item">
 
 
-                        <div class="row row_failed table-row-failed">
+                        <div class="row row_passed table-row-passed">
                             <div class="col-1 text-left small">1.</div>
                             <div class="col-8 text-left">
                                 <span data-toggle="tooltip" title="LocalizationSteps.userOnScreenHome()">
@@ -344,34 +363,17 @@ font-src * data: blob: 'unsafe-inline';"/>
                                 </span>
                             </div>
                             <div class="col-2 text-left small">
-                                0m 00s 000ms
+                                0m 01s 290ms
                             </div>
                             <div class="col-1 text-right">
-    <i class="color-failed cluecumber-icon icon-failed" data-toggle="tooltip"
-       title="failed"><span style="display:none">failed</span></i>
+    <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
+       title="passed"><span style="display:none">passed</span></i>
                             </div>
 
-        <div class="row w-100 p-3 m-0 scenarioErrorMessage">
-            <div class="w-100 text-left border border-danger">
-                <pre class="text-danger small p-2">java.lang.IllegalArgumentException: Can not set io.appium.java_client.android.AndroidElement field pages.LocalizationPages.onBoardingTitle to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
-	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
-	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
-	at sun.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
-	at java.lang.reflect.Field.set(Field.java:764)
-	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
-	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
-	at pages.BasePage.initElements(BasePage.java:30)
-	at pages.BasePage.&#60;init&#62;(BasePage.java:24)
-	at pages.LocalizationPages.&#60;init&#62;(LocalizationPages.java:13)
-	at steps.LocalizationSteps.userOnScreenHome(LocalizationSteps.java:50)
-	at &#226;&#339;&#189;.Given user on screen home(features/00_Localization.feature:12)
-</pre>
-            </div>
-        </div>
                         </div>
 
 
-                        <div class="row row_skipped table-row-skipped">
+                        <div class="row row_passed table-row-passed">
                             <div class="col-1 text-left small">2.</div>
                             <div class="col-8 text-left">
                                 <span data-toggle="tooltip" title="LocalizationSteps.userClickFlightMenu()">
@@ -380,68 +382,11 @@ font-src * data: blob: 'unsafe-inline';"/>
                                 </span>
                             </div>
                             <div class="col-2 text-left small">
-                                0m 00s 000ms
+                                0m 04s 298ms
                             </div>
                             <div class="col-1 text-right">
-    <i class="color-skipped cluecumber-icon icon-skipped" data-toggle="tooltip"
-       title="skipped"><span style="display:none">skipped</span></i>
-                            </div>
-
-                        </div>
-
-
-                        <div class="row row_skipped table-row-skipped">
-                            <div class="col-1 text-left small">3.</div>
-                            <div class="col-8 text-left">
-                                <span data-toggle="tooltip" title="LocalizationSteps.userChooseFrom(String)">
-                                    <a href="pages/step-scenarios/step_0370458725.html"><span
-                                                class="keyword">And </span> user choose from "<span class="parameter">Soekarno Hatta</span>"</a>
-                                </span>
-                            </div>
-                            <div class="col-2 text-left small">
-                                0m 00s 000ms
-                            </div>
-                            <div class="col-1 text-right">
-    <i class="color-skipped cluecumber-icon icon-skipped" data-toggle="tooltip"
-       title="skipped"><span style="display:none">skipped</span></i>
-                            </div>
-
-                        </div>
-
-
-                        <div class="row row_skipped table-row-skipped">
-                            <div class="col-1 text-left small">4.</div>
-                            <div class="col-8 text-left">
-                                <span data-toggle="tooltip" title="LocalizationSteps.userChooseTo(String)">
-                                    <a href="pages/step-scenarios/step_1622124012.html"><span
-                                                class="keyword">And </span> user choose to "<span class="parameter">Minangkabau Intl</span>"</a>
-                                </span>
-                            </div>
-                            <div class="col-2 text-left small">
-                                0m 00s 000ms
-                            </div>
-                            <div class="col-1 text-right">
-    <i class="color-skipped cluecumber-icon icon-skipped" data-toggle="tooltip"
-       title="skipped"><span style="display:none">skipped</span></i>
-                            </div>
-
-                        </div>
-
-
-                        <div class="row row_skipped table-row-skipped">
-                            <div class="col-1 text-left small">5.</div>
-                            <div class="col-8 text-left">
-                                <span data-toggle="tooltip" title="LocalizationSteps.userClickButtonSearch()">
-                                    <a href="pages/step-scenarios/step_1039199735.html"><span
-                                                class="keyword">Then </span> user click button search</a>
-                                </span>
-                            </div>
-                            <div class="col-2 text-left small">
-                                0m 00s 000ms
-                            </div>
-                            <div class="col-1 text-right">
-    <i class="color-skipped cluecumber-icon icon-skipped" data-toggle="tooltip"
-       title="skipped"><span style="display:none">skipped</span></i>
+    <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
+       title="passed"><span style="display:none">passed</span></i>
                             </div>
 
                         </div>
@@ -450,13 +395,37 @@ font-src * data: blob: 'unsafe-inline';"/>
         </div>
     </div>
 
+            <div class="scenarioHook collapse">
+    <div class="col-sm-12  h-auto" data-cluecumber-item="card">
+        <div class="card h-100">
+                <div class="card-header">After Hooks</div>
+            <div class="card-body">
+                    <li class="list-group-item">
+                            <div class="row row_passed table-row-passed">
+                                <div class="col-1 text-left small">1.</div>
+                                <div class="col-8 text-left">
+                                    <i>Hooks.stop(Scenario)</i>
+                                </div>
+                                <div class="col-2 text-left small">
+                                    0m 00s 000ms
+                                </div>
+                                <div class="col-1 text-right">
+    <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
+       title="passed"><span style="display:none">passed</span></i>
+                                </div>
+                            </div>
+                    </li>
+            </div>
+        </div>
+    </div>
+            </div>
     </ul>
         </div>
     </main>
 
 <footer class="footer navbar-dark">
     <div class="container-fluid">
-        <span>Cluecumber Report Plugin version 2.5.0 - Report generated on 2023-08-17 21:34:09.</span>
+        <span>Cluecumber Report Plugin version 2.5.0 - Report generated on 2023-08-18 15:27:32.</span>
     </div>
 </footer>    </body>
     </html>
